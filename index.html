@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Small Closure</title>
+</head>
+<body>
+
+<script>
+    function myFunction(first) {
+
+        function myOtherFunction(last){
+            return first + " " + last;
+        }
+
+        return myOtherFunction;
+    }
+
+    var myName = myFunction("Wallace");
+    var yourName = myFunction("Mark");
+    console.log(myName("Wylie"));
+    console.log(yourName("Wylie"));
+</script>
+
+</body>
+</html>
